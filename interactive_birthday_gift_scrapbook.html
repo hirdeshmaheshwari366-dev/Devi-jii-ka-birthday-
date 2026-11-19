@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Birthday Gift You'll Actually Remember 🎂✨</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream: #fffdf7;
+      --paper-cream: #fefae8;
+      --pastel-purple: #cbb4f8;
+      --deep-purple: #7d56c2;
+      --dark-purple: #4a2c7a;
+      --soft-pink: #f6b8d0;
+      --rose-pink: #e57ba4;
+      --soft-yellow: #ffe98a;
+      --mustard-yellow: #f5c342;
+      --grid-line: rgba(183, 156, 224, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #2b1810;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(203, 180, 248, 0.16), transparent 45%),
+        radial-gradient(circle at 80% 80%, rgba(255, 233, 138, 0.14), transparent 45%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      overflow-x: hidden;
+      color: var(--dark-purple);
+    }
+
+    .font-bubbly {
+      font-family: 'Fredoka', cursive, sans-serif;
+    }
+
+    .font-hand {
+      font-family: 'Patrick Hand', cursive, sans-serif;
+    }
+
+    /* Main Device Frame */
+    .scrapbook-frame {
+      width: 100%;
+      max-width: 820px;
+      min-height: 540px;
+      background-color: var(--cream);
+      border-radius: 28px;
+      border: 6px solid #1f1926;
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 0 4px rgba(255, 255, 255, 0.12);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Notebook Grid Background */
+    .bg-grid-paper {
+      background-color: #fffef9;
+      background-image:
+        linear-gradient(to right, var(--grid-line) 1.5px, transparent 1.5px),
+        linear-gradient(to bottom, var(--grid-line) 1.5px, transparent 1.5px);
+      background-size: 26px 26px;
+    }
+
+    /* Vertical Pastel Stripes Background */
+    .bg-pastel-stripes {
+      background: repeating-linear-gradient(
+        90deg,
+        #fffef8,
+        #fffef8 28px,
+        #fbf4ff 28px,
+        #fbf4ff 56px
+      );
+    }
+
+    /* Soft Polka Dot Cream Background */
+    .bg-polka-cream {
+      background-color: #fffcf0;
+      background-image: radial-gradient(#e7d7ff 2.2px, transparent 2.2px);
+      background-size: 22px 22px;
+    }
+
+    /* Outlined Comic Text */
+    .text-outline-purple {
+      color: #cbb2fe;
+      text-shadow:
+        -2px -2px 0 #5b3799,
+         2px -2px 0 #5b3799,
+        -2px  2px 0 #5b3799,
+         2px  2px 0 #5b3799,
+         0px  4px 0 #45247a;
+    }
+
+    .text-outline-yellow {
+      color: #ffe270;
+      text-shadow:
+        -2px -2px 0 #6c46a8,
+         2px -2px 0 #6c46a8,
+        -2px  2px 0 #6c46a8,
+         2px  2px 0 #6c46a8,
+         0px  4px 0 #4f2f85;
+    }
+
+    .text-outline-pink {
+      color: #ffb6d5;
+      text-shadow:
+        -2px -2px 0 #5b3799,
+         2px -2px 0 #5b3799,
+        -2px  2px 0 #5b3799,
+         2px  2px 0 #5b3799,
+         0px  4px 0 #45247a;
+    }
+
+    /* Tactile Pill Buttons */
+    .btn-pill {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      border: 3px solid #583594;
+      border-radius: 9999px;
+      box-shadow: 0 4px 0 #583594;
+      transition: transform 0.14s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.14s ease, filter 0.15s ease;
+      cursor: pointer;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 #583594;
+      filter: brightness(1.03);
+    }
+
+    .btn-pill:active {
+      transform: translateY(3px);
+      box-shadow: 0 1px 0 #583594;
+    }
+
+    /* Keypad Circle Buttons */
+    .keypad-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #ffd6e7 0%, #f5a8c7 100%);
+      border: 2.5px solid #964f72;
+      box-shadow: 0 3.5px 0 #964f72, inset 0 2px 3px rgba(255, 255, 255, 0.7);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #6b294a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      user-select: none;
+    }
+
+    .keypad-btn:hover {
+      transform: scale(1.06);
+      background: linear-gradient(180deg, #ffe3ef 0%, #f8b8d2 100%);
+    }
+
+    .keypad-btn:active {
+      transform: translateY(2.5px) scale(0.97);
+      box-shadow: 0 1px 0 #964f72;
+    }
+
+    /* Screen Transitions */
+    .screen-view {
+      display: none;
+      flex: 1;
+      width: 100%;
+      min-height: 528px;
+      animation: popFadeIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .screen-view.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes popFadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.97) translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes shakeError {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-6px); }
+      80% { transform: translateX(6px); }
+    }
+
+    .shake {
+      animation: shakeError 0.4s ease-in-out;
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(2deg); }
+    }
+
+    .animate-float {
+      animation: floatSlow 3.2s ease-in-out infinite;
+    }
+
+    @keyframes pulseHeart {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.14); }
+    }
+
+    .animate-heartbeat {
+      animation: pulseHeart 1.3s ease-in-out infinite;
+    }
+
+    /* Hug Animation */
+    @keyframes hugLeft {
+      0%, 100% { transform: translateX(0) rotate(0deg); }
+      50% { transform: translateX(14px) rotate(6deg); }
+    }
+
+    @keyframes hugRight {
+      0%, 100% { transform: translateX(0) rotate(0deg); }
+      50% { transform: translateX(-14px) rotate(-6deg); }
+    }
+
+    .bear-left {
+      animation: hugLeft 1.6s ease-in-out infinite;
+    }
+
+    .bear-right {
+      animation: hugRight 1.6s ease-in-out infinite;
+    }
+
+    /* Lined Stationery Paper */
+    .lined-paper {
+      background-color: #fffef9;
+      background-image: repeating-linear-gradient(
+        transparent,
+        transparent 29px,
+        #d9c8f7 29px,
+        #d9c8f7 30px
+      );
+      line-height: 30px;
+    }
+
+    /* Hub Interactive Items Hover */
+    .hub-item {
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease;
+      cursor: pointer;
+    }
+
+    .hub-item:hover {
+      transform: translateY(-10px) scale(1.06) rotate(-2deg);
+      filter: drop-shadow(0 12px 14px rgba(91, 55, 153, 0.22));
+    }
+
+    .hub-item:active {
+      transform: scale(0.96);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f5eeff;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c3a6f5;
+      border-radius: 10px;
+    }
+
+    /* Confetti Canvas */
+    #confetti-canvas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Caption & Floating Controls -->
+  <div class="w-full max-w-[820px] flex flex-wrap items-center justify-between gap-2 mb-2.5 px-1">
+    <div class="flex items-center gap-2 text-white/95 font-bubbly text-sm sm:text-base tracking-wide">
+      <span>Imagine receiving this on your birthday</span>
+      <span class="text-lg">🥹🎂</span>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <!-- Mini Audio Status Indicator -->
+      <button id="global-music-pill" onclick="toggleAudioPlayback()" title="Play / Pause Birthday Song"
+        class="hidden items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#ffe98a] text-[#4a2c7a] border-2 border-[#583594] font-bubbly text-xs font-semibold shadow-sm hover:scale-105 transition">
+        <span id="global-music-icon">🎵</span>
+        <span id="global-music-label" class="max-w-[110px] truncate">Playing Song</span>
+      </button>
+
+      <!-- Customize / Edit Gift Button -->
+      <button onclick="openCustomizeModal()"
+        class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#cbb4f8] hover:bg-[#d7c4fb] text-[#3a1d6b] border-2 border-white/80 font-bubbly text-xs sm:text-sm font-semibold shadow-md transition cursor-pointer">
+        <span>✨ Customize / Edit Gift</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN INTERACTIVE SCRAPBOOK FRAME -->
+  <main class="scrapbook-frame" id="app-frame">
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast-msg"
+      class="hidden fixed top-5 left-1/2 -translate-x-1/2 z-50 px-5 py-2.5 rounded-full bg-[#4a2c7a] text-white font-bubbly text-sm shadow-xl border-2 border-[#ffe98a] transition-all">
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 1: PASSCODE LOCK SCREEN (PASSCODE: 2011)           -->
+    <!-- ========================================================= -->
+    <section id="screen-lock" class="screen-view active bg-pastel-stripes relative justify-center items-center p-4 sm:p-7">
+      <!-- Top & Bottom Decorative Scallop Borders -->
+      <div class="absolute top-0 left-0 right-0 h-4 bg-[#cbb4f8] border-b-2 border-[#7d56c2]/30"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-4 bg-[#cbb4f8] border-t-2 border-[#7d56c2]/30"></div>
+
+      <!-- Floating Sparkles -->
+      <span class="absolute top-7 left-7 text-xl animate-float select-none">✨</span>
+      <span class="absolute bottom-7 right-8 text-xl animate-float select-none" style="animation-delay: 1s;">🌸</span>
+
+      <div class="w-full max-w-[680px] bg-white/95 rounded-[28px] border-4 border-[#cbb4f8] shadow-[0_10px_28px_rgba(125,86,194,0.16)] p-5 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center relative">
+
+        <!-- Left Side: Cute Circular Puppy Sticker Frame -->
+        <div class="flex flex-col items-center justify-center">
+          <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-gradient-to-b from-[#f3e8ff] to-[#ffeef6] border-[6px] border-[#b794f6] shadow-inner flex items-center justify-center p-3">
+            <!-- Decorative Wreath Dots -->
+            <div class="absolute inset-1.5 rounded-full border-2 border-dashed border-[#e57ba4]/60 pointer-events-none"></div>
+
+            <!-- Cute Snoopy-Inspired Puppy Holding Bouquet SVG -->
+            <svg viewBox="0 0 200 200" class="w-40 h-40 sm:w-44 sm:h-44 drop-shadow-sm">
+              <!-- Soft aura -->
+              <circle cx="100" cy="105" r="72" fill="#fff9e6" />
+              <!-- Ears -->
+              <ellipse cx="64" cy="96" rx="16" ry="30" transform="rotate(14 64 96)" fill="#2d2638" />
+              <ellipse cx="136" cy="96" rx="16" ry="30" transform="rotate(-14 136 96)" fill="#2d2638" />
+              <!-- Head -->
+              <ellipse cx="100" cy="88" rx="42" ry="38" fill="#ffffff" stroke="#2d2638" stroke-width="4" />
+              <!-- Snout -->
+              <ellipse cx="100" cy="98" rx="22" ry="16" fill="#ffffff" stroke="#2d2638" stroke-width="3.5" />
+              <!-- Nose -->
+              <ellipse cx="100" cy="91" rx="7" ry="5" fill="#2d2638" />
+              <!-- Happy Eyes -->
+              <path d="M 78 78 Q 84 71 90 78" fill="none" stroke="#2d2638" stroke-width="3.5" stroke-linecap="round" />
+              <path d="M 110 78 Q 116 71 122 78" fill="none" stroke="#2d2638" stroke-width="3.5" stroke-linecap="round" />
+              <!-- Rosy Cheeks -->
+              <ellipse cx="73" cy="91" rx="7" ry="4.5" fill="#ff9ec2" opacity="0.85" />
+              <ellipse cx="127" cy="91" rx="7" ry="4.5" fill="#ff9ec2" opacity="0.85" />
+              <!-- Smile -->
+              <path d="M 92 103 Q 100 111 108 103" fill="none" stroke="#2d2638" stroke-width="3" stroke-linecap="round" />
+              <!-- Body & Collar -->
+              <path d="M 74 123 Q 100 118 126 123 L 132 162 Q 100 170 68 162 Z" fill="#ffffff" stroke="#2d2638" stroke-width="4" />
+              <rect x="78" y="121" width="44" height="8" rx="4" fill="#f57eb0" stroke="#2d2638" stroke-width="2.5" />
+              <!-- Little Flower Bouquet -->
+              <g transform="translate(100, 145)">
+                <path d="M -12 12 L 0 -5 L 12 12 Z" fill="#ffe07d" stroke="#2d2638" stroke-width="2.5" />
+                <circle cx="-8" cy="-8" r="7" fill="#ff85b3" stroke="#2d2638" stroke-width="2" />
+                <circle cx="8" cy="-8" r="7" fill="#b794f6" stroke="#2d2638" stroke-width="2" />
+                <circle cx="0" cy="-14" r="8" fill="#ffd447" stroke="#2d2638" stroke-width="2" />
+                <circle cx="0" cy="-14" r="3" fill="#ffffff" />
+              </g>
+              <!-- Floating Mini Hearts -->
+              <path d="M 44 52 C 44 47 37 47 37 52 C 37 57 44 61 44 61 C 44 61 51 57 51 52 C 51 47 44 47 44 52 Z" fill="#ff7eb3" />
+              <path d="M 156 48 C 156 43 149 43 149 48 C 149 53 156 57 156 57 C 156 57 163 53 163 48 C 163 43 156 43 156 48 Z" fill="#b794f6" />
+            </svg>
+          </div>
+          <span class="mt-2.5 px-3 py-1 rounded-full bg-[#fef3c7] border border-[#f59e0b]/40 text-xs font-bubbly text-[#78350f]">
+            🔒 Secret Birthday Vault
+          </span>
+        </div>
+
+        <!-- Right Side: Passcode Keypad -->
+        <div id="keypad-container" class="flex flex-col items-center">
+          <h2 class="font-bubbly text-xl sm:text-2xl font-bold text-[#7d56c2] mb-2">
+            Enter a passcode
+          </h2>
+
+          <!-- 4 Passcode Dots -->
+          <div class="flex items-center gap-3 mb-2 bg-[#f8f2ff] px-5 py-2.5 rounded-2xl border-2 border-[#d8c2ff]">
+            <div id="dot-0" class="w-4 h-4 rounded-full border-2 border-[#8c62d4] bg-white transition-all duration-150"></div>
+            <div id="dot-1" class="w-4 h-4 rounded-full border-2 border-[#8c62d4] bg-white transition-all duration-150"></div>
+            <div id="dot-2" class="w-4 h-4 rounded-full border-2 border-[#8c62d4] bg-white transition-all duration-150"></div>
+            <div id="dot-3" class="w-4 h-4 rounded-full border-2 border-[#8c62d4] bg-white transition-all duration-150"></div>
+          </div>
+
+          <p id="passcode-feedback" class="h-5 text-xs font-bold text-[#d9468f] mb-2 text-center">
+            Hint: Enter 2011 💕
+          </p>
+
+          <!-- Number Grid -->
+          <div class="grid grid-cols-3 gap-2.5 sm:gap-3 mb-4">
+            <button type="button" class="keypad-btn" onclick="pressKey('1')">1</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('2')">2</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('3')">3</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('4')">4</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('5')">5</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('6')">6</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('7')">7</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('8')">8</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('9')">9</button>
+            <button type="button" class="keypad-btn text-base" onclick="clearPasscode()" title="Clear">⌫</button>
+            <button type="button" class="keypad-btn" onclick="pressKey('0')">0</button>
+            <button type="button" class="keypad-btn text-base" onclick="pressKey('#')">#</button>
+          </div>
+
+          <!-- UNLOCK Pill Button -->
+          <button type="button" onclick="verifyPasscode()"
+            class="btn-pill bg-[#cbb4f8] hover:bg-[#bfa3f7] text-[#3c1e70] px-9 py-2.5 text-base sm:text-lg tracking-wider">
+            UNLOCK 🔓
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 2A: PLAYFUL PROMPT ("Hey! I made something...")     -->
+    <!-- ========================================================= -->
+    <section id="screen-prompt" class="screen-view bg-pastel-stripes relative justify-center items-center p-6 text-center">
+      <div class="max-w-lg w-full flex flex-col items-center">
+        <h1 class="font-bubbly text-2xl sm:text-4xl font-bold text-outline-purple leading-snug mb-4">
+          Hey! I made something for you<br />do you wanna see it?
+        </h1>
+
+        <!-- Cute Puppy with Graduation Cap & Flower SVG -->
+        <div class="my-2 animate-float">
+          <svg viewBox="0 0 220 200" class="w-44 h-40 sm:w-52 sm:h-48 drop-shadow-md">
+            <!-- Fluffy Ears -->
+            <ellipse cx="62" cy="108" rx="22" ry="34" transform="rotate(18 62 108)" fill="#e8d8c3" stroke="#5b3799" stroke-width="3.5" />
+            <ellipse cx="158" cy="108" rx="22" ry="34" transform="rotate(-18 158 108)" fill="#e8d8c3" stroke="#5b3799" stroke-width="3.5" />
+            <!-- Fluffy Head -->
+            <circle cx="110" cy="105" r="48" fill="#fffaf0" stroke="#5b3799" stroke-width="3.5" />
+            <!-- Cute Cap / Beret -->
+            <polygon points="110,36 162,56 110,74 58,56" fill="#4a2c7a" stroke="#2b174d" stroke-width="3" />
+            <rect x="84" y="62" width="52" height="12" rx="4" fill="#6b42b0" />
+            <path d="M 155 58 L 164 84" stroke="#ffd447" stroke-width="3.5" stroke-linecap="round" />
+            <circle cx="164" cy="86" r="4.5" fill="#ffd447" />
+            <!-- Big Puppy Eyes -->
+            <circle cx="91" cy="98" r="7.5" fill="#2d1b4e" />
+            <circle cx="88.5" cy="95.5" r="2.5" fill="#ffffff" />
+            <circle cx="129" cy="98" r="7.5" fill="#2d1b4e" />
+            <circle cx="126.5" cy="95.5" r="2.5" fill="#ffffff" />
+            <!-- Pink Blush -->
+            <ellipse cx="78" cy="110" rx="8" ry="5" fill="#ff9ec2" opacity="0.8" />
+            <ellipse cx="142" cy="110" rx="8" ry="5" fill="#ff9ec2" opacity="0.8" />
+            <!-- Nose & Mouth -->
+            <ellipse cx="110" cy="111" rx="6.5" ry="4.5" fill="#3b2366" />
+            <path d="M 101 119 Q 110 127 119 119" fill="none" stroke="#3b2366" stroke-width="3" stroke-linecap="round" />
+            <!-- Paws & Daisy -->
+            <ellipse cx="86" cy="158" rx="16" ry="12" fill="#fffaf0" stroke="#5b3799" stroke-width="3" />
+            <ellipse cx="134" cy="158" rx="16" ry="12" fill="#fffaf0" stroke="#5b3799" stroke-width="3" />
+            <path d="M 110 165 L 110 135" stroke="#48bb78" stroke-width="4" stroke-linecap="round" />
+            <circle cx="110" cy="132" r="10" fill="#ffe270" stroke="#5b3799" stroke-width="2.5" />
+            <circle cx="110" cy="132" r="4" fill="#ff85b3" />
+          </svg>
+        </div>
+
+        <!-- Yes / No Buttons -->
+        <div class="flex items-center justify-center gap-6 mt-3">
+          <button onclick="goToScreen('screen-yes')"
+            class="btn-pill bg-[#cbb4f8] hover:bg-[#bfa1f7] text-white text-xl sm:text-2xl px-10 py-3">
+            Yes 💖
+          </button>
+          <button onclick="goToScreen('screen-no')"
+            class="btn-pill bg-[#f6b8d0] hover:bg-[#f29ec0] text-white text-xl sm:text-2xl px-10 py-3">
+            No 🙈
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 2B: FUNNY "NO" SCREEN ("SERIOUSLY?! how dare you") -->
+    <!-- ========================================================= -->
+    <section id="screen-no" class="screen-view bg-pastel-stripes relative justify-center items-center p-6 text-center">
+      <div class="max-w-lg w-full flex flex-col items-center">
+        <h1 class="font-bubbly text-2xl sm:text-4xl font-bold text-outline-pink leading-snug mb-3">
+          SERIOUSLY?! how dare you hmph 😤
+        </h1>
+
+        <!-- Grumpy Fluffy Puppy SVG -->
+        <div class="my-3">
+          <svg viewBox="0 0 220 200" class="w-44 h-40 sm:w-52 sm:h-48">
+            <!-- Puff Steam -->
+            <path d="M 48 64 Q 38 54 48 44" fill="none" stroke="#ff6b9d" stroke-width="4" stroke-linecap="round" />
+            <path d="M 172 64 Q 182 54 172 44" fill="none" stroke="#ff6b9d" stroke-width="4" stroke-linecap="round" />
+            <!-- Ears -->
+            <ellipse cx="64" cy="95" rx="20" ry="30" transform="rotate(25 64 95)" fill="#f3e8ff" stroke="#5b3799" stroke-width="3.5" />
+            <ellipse cx="156" cy="95" rx="20" ry="30" transform="rotate(-25 156 95)" fill="#f3e8ff" stroke="#5b3799" stroke-width="3.5" />
+            <!-- Fluffy Body/Head -->
+            <circle cx="110" cy="108" r="52" fill="#ffffff" stroke="#5b3799" stroke-width="3.5" />
+            <!-- Angry Eyebrows -->
+            <line x1="78" y1="84" x2="98" y2="93" stroke="#4a2c7a" stroke-width="4.5" stroke-linecap="round" />
+            <line x1="142" y1="84" x2="122" y2="93" stroke="#4a2c7a" stroke-width="4.5" stroke-linecap="round" />
+            <!-- Eyes -->
+            <circle cx="90" cy="100" r="6.5" fill="#2d1b4e" />
+            <circle cx="130" cy="100" r="6.5" fill="#2d1b4e" />
+            <!-- Grumpy Pout -->
+            <ellipse cx="110" cy="112" rx="6" ry="4" fill="#3b2366" />
+            <path d="M 96 128 Q 110 118 124 128" fill="none" stroke="#3b2366" stroke-width="3.5" stroke-linecap="round" />
+            <!-- Crossed Paws -->
+            <ellipse cx="95" cy="154" rx="18" ry="11" transform="rotate(-15 95 154)" fill="#ffffff" stroke="#5b3799" stroke-width="3" />
+            <ellipse cx="125" cy="154" rx="18" ry="11" transform="rotate(15 125 154)" fill="#ffffff" stroke="#5b3799" stroke-width="3" />
+          </svg>
+        </div>
+
+        <button onclick="goToScreen('screen-prompt')"
+          class="btn-pill bg-[#cbb4f8] hover:bg-[#bfa1f7] text-white text-lg sm:text-xl px-9 py-3 mt-2">
+          ← Go back
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 2C: HAPPY "YES" SCREEN ("That's a good boy / Yay!") -->
+    <!-- ========================================================= -->
+    <section id="screen-yes" class="screen-view bg-pastel-stripes relative justify-center items-center p-6 text-center">
+      <div class="max-w-lg w-full flex flex-col items-center">
+        <!-- Heart Framed Smiling Puppy SVG -->
+        <div class="relative my-2 animate-heartbeat">
+          <svg viewBox="0 0 240 210" class="w-48 h-44 sm:w-56 sm:h-48 drop-shadow-md">
+            <!-- Big Pastel Pink Heart Backdrop -->
+            <path d="M 120 192 C 120 192 25 132 25 70 C 25 36 52 16 80 16 C 98 16 112 26 120 38 C 128 26 142 16 160 16 C 188 16 215 36 215 70 C 215 132 120 192 120 192 Z"
+              fill="#ffd1e3" stroke="#e57ba4" stroke-width="4" />
+            <!-- Happy Puppy Inside -->
+            <ellipse cx="82" cy="95" rx="15" ry="26" transform="rotate(16 82 95)" fill="#c69c6d" stroke="#4a2c7a" stroke-width="3" />
+            <ellipse cx="158" cy="95" rx="15" ry="26" transform="rotate(-16 158 95)" fill="#c69c6d" stroke="#4a2c7a" stroke-width="3" />
+            <circle cx="120" cy="98" r="38" fill="#fff8eb" stroke="#4a2c7a" stroke-width="3" />
+            <!-- Happy Squinting Eyes -->
+            <path d="M 100 90 Q 106 82 112 90" fill="none" stroke="#4a2c7a" stroke-width="3.5" stroke-linecap="round" />
+            <path d="M 128 90 Q 134 82 140 90" fill="none" stroke="#4a2c7a" stroke-width="3.5" stroke-linecap="round" />
+            <!-- Big Open Smile & Tongue -->
+            <ellipse cx="120" cy="101" rx="6" ry="4" fill="#3b2366" />
+            <path d="M 106 108 Q 120 124 134 108 Z" fill="#ff7eb3" stroke="#4a2c7a" stroke-width="2.5" />
+          </svg>
+        </div>
+
+        <h1 class="font-bubbly text-3xl sm:text-4xl font-bold text-outline-purple mb-4">
+          Yay! That's the spirit! 🎉
+        </h1>
+
+        <button onclick="enterBirthdayHero()"
+          class="btn-pill bg-[#cbb4f8] hover:bg-[#bfa1f7] text-white text-xl sm:text-2xl px-11 py-3">
+          Click ✨
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 3: "HAPPYYY BIRTHDAY!" HERO CAMERA CARD            -->
+    <!-- ========================================================= -->
+    <section id="screen-hero" class="screen-view bg-grid-paper relative justify-between items-center p-5 sm:p-8">
+      <!-- Top Decorative Header -->
+      <div class="w-full text-center relative z-10 mt-1">
+        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#ffe98a] border-2 border-[#7d56c2] text-xs sm:text-sm font-bubbly font-semibold text-[#4a2c7a] mb-2 shadow-sm">
+          <span>🎂 Special Day Edition for <span id="hero-recipient-badge">Bestie</span></span>
+        </div>
+        <h1 class="font-bubbly text-4xl sm:text-6xl font-bold text-outline-yellow tracking-wide leading-none">
+          Happyyy Birthday!
+        </h1>
+      </div>
+
+      <!-- Center Retro Camera with Customizable Photo -->
+      <div class="relative my-3 flex flex-col items-center justify-center w-full max-w-md">
+        <!-- Floating Cute Stickers -->
+        <span class="absolute -left-2 sm:-left-8 top-4 text-3xl sm:text-4xl animate-float select-none">🎈</span>
+        <span class="absolute -right-2 sm:-right-8 top-2 text-3xl sm:text-4xl animate-float select-none" style="animation-delay: 0.7s;">💖</span>
+        <span class="absolute -left-1 sm:-left-6 bottom-6 text-2xl sm:text-3xl animate-float select-none" style="animation-delay: 1.2s;">🌟</span>
+
+        <!-- Retro Pastel Camera Body -->
+        <div class="w-full max-w-[360px] bg-gradient-to-b from-[#cbb4f8] to-[#b192f0] rounded-[30px] border-4 border-[#4a2c7a] p-4 shadow-[0_10px_0_#4a2c7a] relative">
+          <!-- Camera Top Flash & Shutter -->
+          <div class="flex items-center justify-between px-3 mb-2.5">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-4 rounded-md bg-[#ffe98a] border-2 border-[#4a2c7a]"></div>
+              <div class="w-3 h-3 rounded-full bg-[#ff7eb3] border border-[#4a2c7a]"></div>
+            </div>
+            <span class="font-bubbly text-xs font-bold text-white tracking-widest uppercase bg-[#4a2c7a]/40 px-2.5 py-0.5 rounded-full">
+              INSTA-LOVE 2011
+            </span>
+            <div class="w-6 h-6 rounded-full bg-[#ffe98a] border-2 border-[#4a2c7a]"></div>
+          </div>
+
+          <!-- Camera Viewfinder / Photo Screen -->
+          <div class="relative w-full aspect-[4/3] bg-[#241738] rounded-2xl border-4 border-[#4a2c7a] overflow-hidden group">
+            <img id="hero-photo-img"
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80"
+              onerror="this.src='https://placehold.co/600x450/cbb4f8/4a2c7a?text=Happy+Birthday!'"
+              alt="Birthday Photo"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+            <!-- Quick Upload Overlay Button -->
+            <label for="quick-hero-upload"
+              class="absolute bottom-2.5 right-2.5 bg-white/95 hover:bg-[#ffe98a] text-[#4a2c7a] border-2 border-[#4a2c7a] rounded-full px-3 py-1 text-xs font-bubbly font-semibold shadow-md cursor-pointer flex items-center gap-1 transition">
+              <span>📷 Change Photo</span>
+            </label>
+            <input id="quick-hero-upload" type="file" accept="image/*" class="hidden" onchange="handleHeroPhotoUpload(event)" />
+          </div>
+
+          <!-- Camera Bottom Strip -->
+          <div class="flex items-center justify-between mt-3 px-2">
+            <div class="flex gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#ffe98a]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#ff9ec2]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-white"></span>
+            </div>
+            <span class="font-hand text-white text-base tracking-wide">
+              ✨ Captured with love ✨
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="w-full flex items-center justify-between mt-1">
+        <button onclick="goToScreen('screen-prompt')"
+          class="btn-pill bg-white text-[#5b3799] px-5 py-2 text-sm">
+          ← Back
+        </button>
+        <button onclick="goToScreen('screen-hub')"
+          class="btn-pill bg-[#ffe98a] hover:bg-[#ffdf5e] text-[#4a2c7a] px-8 py-2.5 text-lg">
+          Next →
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 4: INTERACTIVE GIFT HUB ("Click on each item")     -->
+    <!-- ========================================================= -->
+    <section id="screen-hub" class="screen-view bg-grid-paper relative justify-between items-center overflow-hidden">
+      <!-- Wavy Purple Top Banner -->
+      <div class="w-full relative">
+        <svg viewBox="0 0 800 115" preserveAspectRatio="none" class="w-full h-24 sm:h-28 block">
+          <path d="M0,0 L800,0 L800,72 Q700,115 600,72 T400,72 T200,72 T0,72 Z" fill="#cbb4f8" />
+          <path d="M0,72 Q100,115 200,72 T400,72 T600,72 T800,72" fill="none" stroke="#8b62d6" stroke-width="4" />
+        </svg>
+        <div class="absolute inset-0 flex items-center justify-center pb-4 px-4">
+          <h2 class="font-bubbly text-2xl sm:text-3xl font-bold text-white drop-shadow-[0_3px_0_#5b3799] text-center">
+            Click on each item to open ✨
+          </h2>
+        </div>
+      </div>
+
+      <!-- Three Large Interactive Scrapbook Items -->
+      <div class="w-full max-w-3xl px-4 sm:px-8 my-auto py-4 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-5 items-center justify-items-center">
+
+        <!-- ITEM 1: YELLOW RETRO CAMERA -> MEMORIES GALLERY -->
+        <div onclick="openSubView('view-memories')" class="hub-item flex flex-col items-center group">
+          <div class="w-44 h-36 sm:w-48 sm:h-40 flex items-center justify-center">
+            <svg viewBox="0 0 200 165" class="w-full h-full drop-shadow-md">
+              <!-- Camera Top Buttons -->
+              <rect x="34" y="18" width="28" height="14" rx="5" fill="#ff9ec2" stroke="#4a2c7a" stroke-width="3.5" />
+              <rect x="132" y="20" width="32" height="12" rx="4" fill="#cbb4f8" stroke="#4a2c7a" stroke-width="3.5" />
+              <!-- Camera Main Body -->
+              <rect x="18" y="30" width="164" height="114" rx="22" fill="#ffe270" stroke="#4a2c7a" stroke-width="4" />
+              <!-- Decorative Stripe -->
+              <rect x="20" y="68" width="160" height="36" fill="#fff5c0" />
+              <!-- Flash -->
+              <rect x="32" y="42" width="26" height="18" rx="6" fill="#ffffff" stroke="#4a2c7a" stroke-width="3" />
+              <!-- Big Lens -->
+              <circle cx="104" cy="87" r="40" fill="#cbb4f8" stroke="#4a2c7a" stroke-width="4" />
+              <circle cx="104" cy="87" r="28" fill="#4a2c7a" />
+              <circle cx="104" cy="87" r="18" fill="#291647" />
+              <circle cx="95" cy="78" r="6" fill="#ffffff" opacity="0.85" />
+              <circle cx="112" cy="95" r="3" fill="#ff9ec2" opacity="0.9" />
+              <!-- Cute Heart Sticker -->
+              <path d="M 156 48 C 156 43 149 43 149 48 C 149 53 156 57 156 57 C 156 57 163 53 163 48 C 163 43 156 43 156 48 Z" fill="#ff6b9d" />
+            </svg>
+          </div>
+          <span class="mt-1 px-4 py-1 rounded-full bg-[#ffe98a] border-2 border-[#583594] font-bubbly text-sm sm:text-base font-bold text-[#4a2c7a] shadow-sm group-hover:bg-[#ffd84d]">
+            📸 Memories
+          </span>
+        </div>
+
+        <!-- ITEM 2: PASTEL PURPLE ENVELOPE -> BIRTHDAY LETTER -->
+        <div onclick="openSubView('view-letter')" class="hub-item flex flex-col items-center group">
+          <div class="w-44 h-36 sm:w-48 sm:h-40 flex items-center justify-center">
+            <svg viewBox="0 0 200 165" class="w-full h-full drop-shadow-md">
+              <!-- Envelope Back -->
+              <rect x="18" y="34" width="164" height="108" rx="16" fill="#d9c4ff" stroke="#4a2c7a" stroke-width="4" />
+              <!-- Peeking Letter Paper -->
+              <rect x="34" y="20" width="132" height="65" rx="8" fill="#fffdf5" stroke="#4a2c7a" stroke-width="3" />
+              <line x1="48" y1="34" x2="120" y2="34" stroke="#cbb4f8" stroke-width="3" stroke-linecap="round" />
+              <line x1="48" y1="45" x2="145" y2="45" stroke="#cbb4f8" stroke-width="3" stroke-linecap="round" />
+              <!-- Envelope Side Flaps -->
+              <polygon points="20,40 100,96 20,138" fill="#cbb4f8" stroke="#4a2c7a" stroke-width="3.5" stroke-linejoin="round" />
+              <polygon points="180,40 100,96 180,138" fill="#cbb4f8" stroke="#4a2c7a" stroke-width="3.5" stroke-linejoin="round" />
+              <!-- Envelope Bottom Flap -->
+              <polygon points="20,140 100,84 180,140" fill="#e5d6ff" stroke="#4a2c7a" stroke-width="3.5" stroke-linejoin="round" />
+              <!-- Heart Wax Seal -->
+              <circle cx="100" cy="94" r="18" fill="#ff9ec2" stroke="#4a2c7a" stroke-width="3" />
+              <path d="M 100 90 C 100 85 92 85 92 91 C 92 97 100 103 100 103 C 100 103 108 97 108 91 C 108 85 100 85 100 90 Z" fill="#ffffff" />
+            </svg>
+          </div>
+          <span class="mt-1 px-4 py-1 rounded-full bg-[#e5d6ff] border-2 border-[#583594] font-bubbly text-sm sm:text-base font-bold text-[#4a2c7a] shadow-sm group-hover:bg-[#d5bdff]">
+            💌 Love Letter
+          </span>
+        </div>
+
+        <!-- ITEM 3: RETRO CASSETTE TAPE -> MUSIC PLAYER -->
+        <div onclick="openSubView('view-music')" class="hub-item flex flex-col items-center group">
+          <div class="w-44 h-36 sm:w-48 sm:h-40 flex items-center justify-center">
+            <svg viewBox="0 0 200 165" class="w-full h-full drop-shadow-md">
+              <!-- Cassette Shell -->
+              <rect x="16" y="30" width="168" height="110" rx="16" fill="#4f357a" stroke="#281645" stroke-width="4" />
+              <!-- Pastel Label Sticker -->
+              <rect x="28" y="42" width="144" height="68" rx="10" fill="#ffe98a" stroke="#281645" stroke-width="3" />
+              <rect x="28" y="42" width="144" height="18" rx="6" fill="#ff9ec2" />
+              <!-- Tape Window -->
+              <rect x="48" y="66" width="104" height="32" rx="14" fill="#2d1b4e" stroke="#4a2c7a" stroke-width="2.5" />
+              <!-- Left & Right Reels -->
+              <circle cx="70" cy="82" r="11" fill="#ffffff" />
+              <circle cx="70" cy="82" r="4" fill="#4a2c7a" />
+              <circle cx="130" cy="82" r="11" fill="#ffffff" />
+              <circle cx="130" cy="82" r="4" fill="#4a2c7a" />
+              <!-- Tape Ribbon -->
+              <line x1="81" y1="82" x2="119" y2="82" stroke="#cbb4f8" stroke-width="4" />
+              <!-- Bottom Trapezoid -->
+              <polygon points="44,140 56,118 144,118 156,140" fill="#3a235e" stroke="#281645" stroke-width="3" />
+              <circle cx="66" cy="130" r="4" fill="#ffe98a" />
+              <circle cx="134" cy="130" r="4" fill="#ffe98a" />
+            </svg>
+          </div>
+          <span class="mt-1 px-4 py-1 rounded-full bg-[#ffd1e3] border-2 border-[#583594] font-bubbly text-sm sm:text-base font-bold text-[#4a2c7a] shadow-sm group-hover:bg-[#ffb8d4]">
+            📼 Our Song
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="w-full px-6 pb-5 flex items-center justify-between">
+        <button onclick="goToScreen('screen-hero')"
+          class="btn-pill bg-white text-[#5b3799] px-5 py-2 text-sm">
+          ← Back
+        </button>
+
+        <button onclick="goToScreen('screen-wish')"
+          class="btn-pill bg-[#cbb4f8] hover:bg-[#bfa1f7] text-[#3c1e70] px-8 py-2.5 text-lg">
+          Next →
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SUB-VIEW A: MEMORIES GALLERY ("Moments of us ❤️")         -->
+    <!-- ========================================================= -->
+    <section id="view-memories" class="screen-view bg-grid-paper relative p-4 sm:p-6 justify-between">
+      <!-- Browser-Style Card Container -->
+      <div class="w-full max-w-3xl mx-auto bg-white rounded-3xl border-4 border-[#7d56c2] shadow-[0_8px_0_#7d56c2] overflow-hidden flex flex-col flex-1">
+        <!-- Browser Top Bar -->
+        <div class="bg-[#cbb4f8] px-4 py-2.5 border-b-3 border-[#7d56c2] flex flex-wrap items-center justify-between gap-2">
+          <div class="flex items-center gap-1.5">
+            <span class="w-3.5 h-3.5 rounded-full bg-[#ff7eb3] border border-[#4a2c7a]"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-[#ffe98a] border border-[#4a2c7a]"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-[#8ce99a] border border-[#4a2c7a]"></span>
+          </div>
+
+          <!-- Search Bar Pill -->
+          <div class="flex-1 max-w-xs bg-white rounded-full px-4 py-1 border-2 border-[#7d56c2] flex items-center justify-between text-xs sm:text-sm font-bubbly text-[#4a2c7a]">
+            <span>Moments of us ❤️</span>
+            <span>🔍</span>
+          </div>
+
+          <!-- Upload More Photos Button -->
+          <label for="gallery-photo-upload"
+            class="bg-[#ffe98a] hover:bg-[#ffd84d] text-[#4a2c7a] border-2 border-[#4a2c7a] rounded-full px-3 py-1 text-xs font-bubbly font-bold cursor-pointer shadow-sm transition">
+            + Upload Photos
+          </label>
+          <input id="gallery-photo-upload" type="file" accept="image/*" multiple class="hidden" onchange="handleGalleryUpload(event)" />
+        </div>
+
+        <!-- Tabs Bar -->
+        <div class="bg-[#faf5ff] px-4 py-1.5 border-b border-[#e5d6ff] flex items-center gap-4 text-xs font-bold text-[#7d56c2]">
+          <span class="border-b-2 border-[#7d56c2] pb-0.5">All</span>
+          <span class="opacity-60">Images</span>
+          <span class="opacity-60">Videos</span>
+          <span class="opacity-60">Memories</span>
+          <span class="ml-auto text-[11px] text-[#9b7ad6]">Click any photo to zoom ✨</span>
+        </div>
+
+        <!-- Photo Grid -->
+        <div id="memories-grid" class="p-4 grid grid-cols-2 sm:grid-cols-3 gap-3.5 overflow-y-auto max-h-[340px]">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Back to Hub Button -->
+      <div class="w-full max-w-3xl mx-auto mt-3 flex justify-between items-center">
+        <span class="text-xs font-bubbly text-[#6b46b2]">Tip: You can add or remove photos anytime!</span>
+        <button onclick="goToScreen('screen-hub')"
+          class="btn-pill bg-[#ffe98a] text-[#4a2c7a] px-7 py-2 text-base">
+          ← Back to Gifts
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SUB-VIEW B: BIRTHDAY LETTER ("Happy Birthday, Bestie!")   -->
+    <!-- ========================================================= -->
+    <section id="view-letter" class="screen-view bg-polka-cream relative p-4 sm:p-6 justify-between items-center">
+      <div class="w-full max-w-2xl bg-white rounded-3xl border-4 border-[#8b62d6] shadow-[0_8px_0_#8b62d6] overflow-hidden flex flex-col flex-1 relative">
+        <!-- Wavy Pastel Header -->
+        <div class="bg-gradient-to-r from-[#d8c2ff] via-[#cbb4f8] to-[#ffd1e3] px-6 py-4 border-b-3 border-[#8b62d6] text-center">
+          <h2 id="letter-heading" class="font-bubbly text-2xl sm:text-3xl font-bold text-[#4a2c7a]">
+            Happy Birthday, Bestie! 🌷
+          </h2>
+        </div>
+
+        <!-- Lined Stationery Body -->
+        <div class="lined-paper p-5 sm:p-7 flex-1 overflow-y-auto max-h-[340px] relative">
+          <p id="letter-body-text" class="font-hand text-xl sm:text-2xl text-[#3b2366] whitespace-pre-line">
+            <!-- Populated from state -->
+          </p>
+
+          <!-- Cute Corner Stickers inside Letter -->
+          <div class="mt-4 flex items-end justify-between">
+            <!-- Tulip Bouquet Mini SVG -->
+            <svg viewBox="0 0 90 90" class="w-16 h-16">
+              <path d="M 45 80 L 45 35" stroke="#48bb78" stroke-width="4" stroke-linecap="round" />
+              <path d="M 45 78 L 28 42" stroke="#48bb78" stroke-width="3.5" stroke-linecap="round" />
+              <path d="M 45 78 L 62 42" stroke="#48bb78" stroke-width="3.5" stroke-linecap="round" />
+              <path d="M 35 35 C 35 20 55 20 55 35 Z" fill="#ff7eb3" stroke="#4a2c7a" stroke-width="2.5" />
+              <path d="M 18 42 C 18 28 38 28 38 42 Z" fill="#ffe270" stroke="#4a2c7a" stroke-width="2.5" />
+              <path d="M 52 42 C 52 28 72 28 72 42 Z" fill="#cbb4f8" stroke="#4a2c7a" stroke-width="2.5" />
+            </svg>
+
+            <!-- Cute Puppy with Glasses Sticker -->
+            <div class="flex items-center gap-2 bg-[#fff9db] border-2 border-[#8b62d6] rounded-2xl px-3 py-1.5 shadow-sm">
+              <span class="text-2xl">🐶👓</span>
+              <span class="font-hand text-lg text-[#4a2c7a] font-bold">Forever grateful for you!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Back Button -->
+      <div class="w-full max-w-2xl mt-3 flex justify-between items-center">
+        <button onclick="openCustomizeModal('letter')"
+          class="btn-pill bg-white text-[#6b46b2] px-4 py-1.5 text-xs sm:text-sm">
+          ✏️ Edit Letter
+        </button>
+        <button onclick="goToScreen('screen-hub')"
+          class="btn-pill bg-[#cbb4f8] text-[#3c1e70] px-7 py-2 text-base">
+          ← Back to Gifts
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SUB-VIEW C: CASSETTE / MUSIC PLAYER                       -->
+    <!-- ========================================================= -->
+    <section id="view-music" class="screen-view bg-grid-paper relative p-4 sm:p-6 justify-between items-center">
+      <!-- Sleek Dark-Pastel Music Player Card -->
+      <div class="w-full max-w-2xl bg-[#191426] text-white rounded-3xl border-4 border-[#7d56c2] shadow-[0_10px_0_#7d56c2] p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden">
+
+        <!-- Top Bar: Track Info + Upload Song Button -->
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/15 pb-3.5">
+          <div class="flex items-center gap-3">
+            <!-- Spinning Vinyl / Cover Art -->
+            <div id="vinyl-disc" class="w-12 h-12 rounded-full bg-gradient-to-tr from-[#cbb4f8] via-[#ff9ec2] to-[#ffe98a] border-2 border-white flex items-center justify-center shadow-md">
+              <div class="w-3.5 h-3.5 rounded-full bg-[#191426] border border-white"></div>
+            </div>
+            <div>
+              <h3 id="player-song-title" class="font-bubbly text-base sm:text-lg font-bold text-[#ffe98a] leading-tight">
+                O Haareya Ki Dil Haareya (Birthday Mix)
+              </h3>
+              <p id="player-song-artist" class="text-xs text-[#cbb4f8]">
+                Dedicated to You • Custom Birthday Track ✨
+              </p>
+            </div>
+          </div>
+
+          <!-- Upload Audio Button -->
+          <label for="audio-file-upload"
+            class="bg-[#ffe98a] hover:bg-[#ffdf5e] text-[#2b174d] border-2 border-white rounded-full px-3.5 py-1.5 text-xs font-bubbly font-bold cursor-pointer shadow transition flex items-center gap-1.5">
+            <span>🎵 Upload Song (MP3/Audio)</span>
+          </label>
+          <input id="audio-file-upload" type="file" accept="audio/*" class="hidden" onchange="handleAudioUpload(event)" />
+        </div>
+
+        <!-- Center Synced Lyric / Visualizer Stage -->
+        <div class="my-5 py-6 px-4 rounded-2xl bg-gradient-to-b from-[#261d3b] to-[#1f1730] border border-[#cbb4f8]/25 text-center relative min-h-[155px] flex flex-col items-center justify-center">
+          <span class="text-[11px] uppercase tracking-widest text-[#cbb4f8]/80 mb-2 font-bubbly">
+            ★ Now Playing ★
+          </span>
+          <p id="active-lyric-line" class="font-bubbly text-xl sm:text-3xl font-bold text-white tracking-wide drop-shadow-[0_2px_10px_rgba(203,180,248,0.6)] transition-all duration-300">
+            O HAAREYA KI DIL HAAREYA 💖
+          </p>
+          <p id="next-lyric-line" class="font-hand text-base sm:text-lg text-[#cbb4f8]/75 mt-2">
+            May every wish of your heart come true today...
+          </p>
+
+          <!-- Cute Peeking Puppy in Bottom-Right Corner -->
+          <div class="absolute bottom-1 right-3 text-3xl sm:text-4xl select-none animate-float" title="Vibing to your birthday song!">
+            🐶🎧
+          </div>
+        </div>
+
+        <!-- Player Controls & Scrubber -->
+        <div class="flex flex-col gap-2">
+          <!-- Progress Bar -->
+          <div class="flex items-center gap-3 text-xs font-mono text-[#cbb4f8]">
+            <span id="audio-current-time">0:00</span>
+            <input id="audio-scrubber" type="range" min="0" max="100" value="0"
+              oninput="seekAudio(this.value)"
+              class="flex-1 accent-[#ffe98a] h-2 bg-white/20 rounded-lg cursor-pointer" />
+            <span id="audio-duration">0:30</span>
+          </div>
+
+          <!-- Buttons Row -->
+          <div class="flex items-center justify-between mt-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-[#cbb4f8]">🔊</span>
+              <input id="audio-volume" type="range" min="0" max="1" step="0.05" value="0.85"
+                oninput="setAudioVolume(this.value)"
+                class="w-20 accent-[#ff9ec2] h-1.5 bg-white/20 rounded-lg cursor-pointer" />
+            </div>
+
+            <div class="flex items-center gap-4">
+              <button onclick="restartAudio()" class="text-white/80 hover:text-white text-lg cursor-pointer" title="Restart">
+                ⏮️
+              </button>
+              <button id="main-play-btn" onclick="toggleAudioPlayback()"
+                class="w-12 h-12 rounded-full bg-[#cbb4f8] hover:bg-[#ffe98a] text-[#191426] font-bold text-xl flex items-center justify-center shadow-lg transition transform hover:scale-105 cursor-pointer">
+                ▶️
+              </button>
+              <button onclick="openCustomizeModal('music')" class="text-white/80 hover:text-[#ffe98a] text-xs font-bubbly underline cursor-pointer">
+                Edit Lyrics
+              </button>
+            </div>
+
+            <span id="audio-source-badge" class="text-[11px] px-2.5 py-0.5 rounded-full bg-white/10 text-[#ffe98a] font-bubbly">
+              Built-in Melody
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Back Button -->
+      <div class="w-full max-w-2xl mt-3 flex justify-between items-center">
+        <span class="text-xs font-bubbly text-[#6b46b2]">Upload any MP3/WAV from your device!</span>
+        <button onclick="goToScreen('screen-hub')"
+          class="btn-pill bg-[#ffe98a] text-[#4a2c7a] px-7 py-2 text-base">
+          ← Back to Gifts
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 5A: FINAL WISH ("May all the good things...")       -->
+    <!-- ========================================================= -->
+    <section id="screen-wish" class="screen-view bg-pastel-stripes relative justify-center items-center p-6 text-center">
+      <div class="max-w-xl w-full flex flex-col items-center">
+        <h1 class="font-bubbly text-2xl sm:text-4xl font-bold text-outline-purple leading-snug mb-5">
+          May all the good things you've been waiting for finally find you ✨
+        </h1>
+
+        <!-- Cute Wishing Puppy & Rainbow Sticker -->
+        <div class="relative my-2 animate-float">
+          <div class="w-44 h-44 rounded-full bg-[#fff9db] border-4 border-[#cbb4f8] flex flex-col items-center justify-center shadow-md p-4">
+            <span class="text-6xl mb-1">🐶</span>
+            <span class="text-2xl">🌈✨🎂</span>
+          </div>
+        </div>
+
+        <button onclick="triggerVirtualHug()"
+          class="btn-pill bg-[#cbb4f8] hover:bg-[#bfa1f7] text-[#3c1e70] text-xl px-10 py-3 mt-5">
+          Next 🤍
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SCREEN 5B: VIRTUAL HUG LOADING & FINALE                   -->
+    <!-- ========================================================= -->
+    <section id="screen-hug" class="screen-view bg-pastel-stripes relative justify-center items-center p-6 text-center">
+      <div class="max-w-lg w-full flex flex-col items-center">
+        <!-- Two Animated Hugging Bears SVG -->
+        <div class="my-2">
+          <svg viewBox="0 0 260 190" class="w-60 h-44 sm:w-64 sm:h-48 drop-shadow-md">
+            <!-- Floating Hearts Above -->
+            <path class="animate-heartbeat" d="M 130 34 C 130 26 118 26 118 34 C 118 42 130 50 130 50 C 130 50 142 42 142 34 C 142 26 130 26 130 34 Z" fill="#ff6b9d" />
+            <circle cx="95" cy="40" r="4" fill="#ffe270" />
+            <circle cx="165" cy="40" r="4" fill="#cbb4f8" />
+
+            <!-- Left Brown Bear -->
+            <g class="bear-left">
+              <circle cx="72" cy="74" r="14" fill="#b07d56" stroke="#4a2c7a" stroke-width="3" />
+              <circle cx="114" cy="74" r="14" fill="#b07d56" stroke="#4a2c7a" stroke-width="3" />
+              <circle cx="93" cy="96" r="32" fill="#c6926a" stroke="#4a2c7a" stroke-width="3.5" />
+              <ellipse cx="98" cy="103" rx="12" ry="9" fill="#f7e6d4" />
+              <circle cx="101" cy="100" r="3.5" fill="#3b2366" />
+              <path d="M 86 90 Q 91 85 96 90" fill="none" stroke="#3b2366" stroke-width="3" stroke-linecap="round" />
+              <ellipse cx="83" cy="98" rx="5" ry="3.5" fill="#ff9ec2" />
+              <path d="M 68 124 Q 93 118 116 124 L 120 168 L 66 168 Z" fill="#c6926a" stroke="#4a2c7a" stroke-width="3.5" />
+              <!-- Hugging Arm -->
+              <ellipse cx="122" cy="136" rx="18" ry="10" fill="#c6926a" stroke="#4a2c7a" stroke-width="3" />
+            </g>
+
+            <!-- Right White/Cream Bear -->
+            <g class="bear-right">
+              <circle cx="146" cy="74" r="14" fill="#fffdf7" stroke="#4a2c7a" stroke-width="3" />
+              <circle cx="188" cy="74" r="14" fill="#fffdf7" stroke="#4a2c7a" stroke-width="3" />
+              <circle cx="167" cy="96" r="32" fill="#fffdf7" stroke="#4a2c7a" stroke-width="3.5" />
+              <ellipse cx="162" cy="103" rx="12" ry="9" fill="#ffeef6" />
+              <circle cx="159" cy="100" r="3.5" fill="#3b2366" />
+              <path d="M 164 90 Q 169 85 174 90" fill="none" stroke="#3b2366" stroke-width="3" stroke-linecap="round" />
+              <ellipse cx="177" cy="98" rx="5" ry="3.5" fill="#ff9ec2" />
+              <path d="M 144 124 Q 167 118 192 124 L 194 168 L 140 168 Z" fill="#fffdf7" stroke="#4a2c7a" stroke-width="3.5" />
+              <!-- Hugging Arm -->
+              <ellipse cx="138" cy="138" rx="18" ry="10" fill="#fffdf7" stroke="#4a2c7a" stroke-width="3" />
+            </g>
+          </svg>
+        </div>
+
+        <h1 id="hug-status-title" class="font-bubbly text-3xl sm:text-4xl font-bold text-outline-purple mb-2">
+          Virtual hug loading...
+        </h1>
+
+        <!-- Progress Bar -->
+        <div class="w-64 sm:w-80 h-5 bg-white rounded-full border-3 border-[#583594] overflow-hidden p-0.5 mb-4 shadow-inner">
+          <div id="hug-progress-bar" class="h-full w-0 bg-gradient-to-r from-[#ff9ec2] via-[#cbb4f8] to-[#ffe98a] rounded-full transition-all duration-300"></div>
+        </div>
+
+        <p id="hug-subtext" class="font-hand text-xl text-[#4a2c7a] mb-4">
+          Sending 10000% love & birthday warmth...
+        </p>
+
+        <div class="flex items-center gap-3">
+          <button onclick="goToScreen('screen-hub')"
+            class="btn-pill bg-[#ffe98a] text-[#4a2c7a] px-6 py-2.5 text-base">
+            🎁 Back to Gifts
+          </button>
+          <button onclick="replayFromStart()"
+            class="btn-pill bg-[#cbb4f8] text-[#3c1e70] px-6 py-2.5 text-base">
+            🔄 Replay
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- LIGHTBOX MODAL FOR VIEWING GALLERY PHOTOS                 -->
+  <!-- ========================================================= -->
+  <div id="photo-lightbox" onclick="closeLightbox()"
+    class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm items-center justify-center p-4">
+    <div onclick="event.stopPropagation()" class="relative max-w-xl w-full bg-white rounded-3xl border-4 border-[#cbb4f8] p-3 shadow-2xl">
+      <img id="lightbox-img" src="" alt="Zoomed Memory" class="w-full max-h-[70vh] object-contain rounded-2xl bg-[#191426]" />
+      <div class="flex items-center justify-between mt-3 px-2">
+        <span id="lightbox-caption" class="font-hand text-xl text-[#4a2c7a]">Sweet Memory 💖</span>
+        <button onclick="closeLightbox()" class="btn-pill bg-[#cbb4f8] text-[#3c1e70] px-5 py-1 text-sm">
+          Close ✕
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- CREATOR / CUSTOMIZE GIFT MODAL                            -->
+  <!-- ========================================================= -->
+  <div id="customize-modal"
+    class="hidden fixed inset-0 z-50 bg-black/65 backdrop-blur-xs items-center justify-center p-3 sm:p-5 overflow-y-auto">
+    <div class="bg-[#fffdf7] w-full max-w-2xl rounded-3xl border-4 border-[#583594] shadow-2xl overflow-hidden my-auto">
+      <!-- Modal Header -->
+      <div class="bg-[#cbb4f8] px-5 py-3.5 border-b-3 border-[#583594] flex items-center justify-between">
+        <h2 class="font-bubbly text-xl sm:text-2xl font-bold text-[#3c1e70]">
+          ✨ Customize Your Birthday Gift
+        </h2>
+        <button onclick="closeCustomizeModal()"
+          class="w-8 h-8 rounded-full bg-white border-2 border-[#583594] font-bold text-[#583594] flex items-center justify-center cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Form Content -->
+      <div class="p-5 max-h-[75vh] overflow-y-auto space-y-5">
+
+        <!-- 1. Recipient & Letter -->
+        <div class="bg-white p-4 rounded-2xl border-2 border-[#e5d6ff] space-y-3">
+          <h3 class="font-bubbly font-bold text-base text-[#6b46b2]">💌 1. Recipient Name & Birthday Letter</h3>
+          <div>
+            <label class="block text-xs font-bold text-[#4a2c7a] mb-1">Recipient Name / Nickname</label>
+            <input id="input-recipient" type="text" placeholder="e.g., Bestie, Cutie, Sarah..."
+              class="w-full px-3.5 py-2 rounded-xl border-2 border-[#cbb4f8] focus:outline-none focus:border-[#7d56c2] font-semibold text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#4a2c7a] mb-1">Heartfelt Birthday Message</label>
+            <textarea id="input-letter" rows="4"
+              class="w-full px-3.5 py-2 rounded-xl border-2 border-[#cbb4f8] focus:outline-none focus:border-[#7d56c2] font-hand text-lg leading-snug"></textarea>
+          </div>
+        </div>
+
+        <!-- 2. Upload Pictures -->
+        <div class="bg-white p-4 rounded-2xl border-2 border-[#e5d6ff] space-y-3">
+          <h3 class="font-bubbly font-bold text-base text-[#6b46b2]">📸 2. Upload Pictures</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="p-3 rounded-xl bg-[#faf5ff] border border-dashed border-[#8b62d6]">
+              <p class="text-xs font-bold text-[#4a2c7a] mb-1.5">Main Birthday Camera Photo</p>
+              <input type="file" accept="image/*" onchange="handleHeroPhotoUpload(event)"
+                class="text-xs file:mr-2 file:py-1 file:px-3 file:rounded-full file:border-0 file:bg-[#cbb4f8] file:text-[#3c1e70] file:font-bold cursor-pointer" />
+            </div>
+            <div class="p-3 rounded-xl bg-[#fffbeb] border border-dashed border-[#d97706]">
+              <p class="text-xs font-bold text-[#4a2c7a] mb-1.5">Add Memories Gallery Photos</p>
+              <input type="file" accept="image/*" multiple onchange="handleGalleryUpload(event)"
+                class="text-xs file:mr-2 file:py-1 file:px-3 file:rounded-full file:border-0 file:bg-[#ffe98a] file:text-[#4a2c7a] file:font-bold cursor-pointer" />
+            </div>
+          </div>
+          <!-- Thumbnail Manager -->
+          <div id="modal-gallery-thumbs" class="flex flex-wrap gap-2 pt-1"></div>
+        </div>
+
+        <!-- 3. Song / Audio Upload & Lyrics -->
+        <div class="bg-white p-4 rounded-2xl border-2 border-[#e5d6ff] space-y-3">
+          <h3 class="font-bubbly font-bold text-base text-[#6b46b2]">🎵 3. Add Song (Audio File) & Lyrics</h3>
+          <div class="p-3 rounded-xl bg-[#fdf2f8] border border-dashed border-[#db2777]">
+            <label class="block text-xs font-bold text-[#4a2c7a] mb-1">Upload Audio File (MP3, WAV, M4A, OGG)</label>
+            <input type="file" accept="audio/*" onchange="handleAudioUpload(event)"
+              class="text-xs file:mr-3 file:py-1.5 file:px-3.5 file:rounded-full file:border-0 file:bg-[#ff9ec2] file:text-[#4a2c7a] file:font-bold cursor-pointer" />
+            <p id="modal-audio-status" class="text-[11px] text-[#7d56c2] mt-1 font-semibold">
+              Currently using built-in chill birthday melody (or upload your own song!)
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-[#4a2c7a] mb-1">Song Title</label>
+              <input id="input-song-title" type="text"
+                class="w-full px-3 py-1.5 rounded-xl border-2 border-[#cbb4f8] text-sm font-semibold" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-[#4a2c7a] mb-1">Artist / Subtitle</label>
+              <input id="input-song-artist" type="text"
+                class="w-full px-3 py-1.5 rounded-xl border-2 border-[#cbb4f8] text-sm font-semibold" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-[#4a2c7a] mb-1">Featured Lyrics (one line per line)</label>
+            <textarea id="input-song-lyrics" rows="3"
+              class="w-full px-3 py-1.5 rounded-xl border-2 border-[#cbb4f8] text-sm font-semibold"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-[#faf5ff] px-5 py-3 border-t-2 border-[#e5d6ff] flex flex-wrap items-center justify-between gap-2">
+        <button onclick="resetToDefaults()"
+          class="text-xs font-bubbly font-bold text-[#d9468f] hover:underline cursor-pointer">
+          Reset to Default Demo
+        </button>
+        <div class="flex items-center gap-2">
+          <button onclick="saveCustomizations()"
+            class="btn-pill bg-[#ffe98a] text-[#4a2c7a] px-6 py-2 text-sm sm:text-base">
+            💾 Save & Apply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden HTML5 Audio Element for Custom Uploaded Songs -->
+  <audio id="custom-audio-el" preload="metadata"></audio>
+
+  <script>
+    /* =====================================================================
+       STATE MANAGEMENT & DEFAULT SCRAPBOOK DATA
+       ===================================================================== */
+    const STORAGE_KEY = 'birthday_scrapbook_gift_2011_v1';
+    const REQUIRED_PASSCODE = '2011';
+
+    const DEFAULT_STATE = {
+      recipient: 'Bestie',
+      heroPhoto: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
+      memories: [
+        {
+          url: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80',
+          caption: 'Sparkles & laughter ✨'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80',
+          caption: 'Celebration vibes 🥂'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80',
+          caption: 'Sweetest birthday cake 🎂'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=600&q=80',
+          caption: 'Adventures together 🌸'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80',
+          caption: 'Best days ever 💖'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80',
+          caption: 'Golden hour memories ☀️'
+        }
+      ],
+      letterText: `Always count on: Through all the laughs, random conversations, inside jokes, and even the tough days, you've made life so much better just by being a part of it.\n\nI hope this year brings you everything you've been wishing for—happiness, success, peace, good health, and countless reasons to smile. Never forget how amazing, kind, and loved you are. You deserve nothing but the very best.\n\nHappy Birthday, and enjoy every moment of your special day. I love you so much! 💖`,
+      songTitle: 'O Haareya Ki Dil Haareya (Birthday Edit)',
+      songArtist: 'For My Favorite Person ✨',
+      songLyrics: [
+        'O HAAREYA KI DIL HAAREYA 💖',
+        'Every smile of yours lights up the room ✨',
+        'Wishing you endless joy & magic today 🎂',
+        'Here is to another unforgettable year together 🌷'
+      ],
+      customAudioDataUrl: null,
+      customAudioName: null
+    };
+
+    let appState = loadState();
+    let enteredPasscode = '';
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          return { ...DEFAULT_STATE, ...JSON.parse(raw) };
+        }
+      } catch (e) {
+        console.warn('Could not load saved state:', e);
+      }
+      return JSON.parse(JSON.stringify(DEFAULT_STATE));
+    }
+
+    function persistState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {
+        showToast('Note: Large media kept for this session 💾');
+      }
+    }
+
+    /* =====================================================================
+       PASSCODE LOCK LOGIC (PASSCODE = 2011)
+       ===================================================================== */
+    function updatePasscodeDots() {
+      for (let i = 0; i < 4; i++) {
+        const dot = document.getElementById(`dot-${i}`);
+        if (i < enteredPasscode.length) {
+          dot.classList.remove('bg-white');
+          dot.classList.add('bg-[#8c62d4]', 'scale-125');
+        } else {
+          dot.classList.add('bg-white');
+          dot.classList.remove('bg-[#8c62d4]', 'scale-125');
+        }
+      }
+    }
+
+    function pressKey(digit) {
+      if (enteredPasscode.length >= 4) return;
+      enteredPasscode += digit;
+      updatePasscodeDots();
+      playClickTone();
+
+      if (enteredPasscode.length === 4) {
+        setTimeout(verifyPasscode, 220);
+      }
+    }
+
+    function clearPasscode() {
+      enteredPasscode = enteredPasscode.slice(0, -1);
+      updatePasscodeDots();
+      document.getElementById('passcode-feedback').textContent = 'Hint: Enter 2011 💕';
+    }
+
+    function verifyPasscode() {
+      const feedback = document.getElementById('passcode-feedback');
+      const container = document.getElementById('keypad-container');
+
+      if (enteredPasscode === REQUIRED_PASSCODE) {
+        feedback.textContent = 'Unlocked! Yay! 🎉';
+        feedback.classList.remove('text-[#d9468f]');
+        feedback.classList.add('text-emerald-600');
+        playSuccessChime();
+        setTimeout(() => {
+          goToScreen('screen-prompt');
+        }, 350);
+      } else {
+        feedback.textContent = 'Oops, try again! Hint: 2011 💕';
+        feedback.classList.add('text-[#d9468f]');
+        container.classList.remove('shake');
+        void container.offsetWidth; // trigger reflow
+        container.classList.add('shake');
+        enteredPasscode = '';
+        updatePasscodeDots();
+      }
+    }
+
+    // Keyboard support for passcode entry
+    document.addEventListener('keydown', (e) => {
+      const lockActive = document.getElementById('screen-lock').classList.contains('active');
+      const modalOpen = !document.getElementById('customize-modal').classList.contains('hidden');
+      if (!lockActive || modalOpen) return;
+
+      if (/^[0-9#]$/.test(e.key)) {
+        pressKey(e.key);
+      } else if (e.key === 'Backspace') {
+        clearPasscode();
+      } else if (e.key === 'Enter') {
+        verifyPasscode();
+      }
+    });
+
+    /* =====================================================================
+       NAVIGATION & SCREEN TRANSITIONS
+       ===================================================================== */
+    function goToScreen(screenId) {
+      document.querySelectorAll('.screen-view').forEach((el) => {
+        el.classList.remove('active');
+      });
+      const target = document.getElementById(screenId);
+      if (target) {
+        target.classList.add('active');
+      }
+    }
+
+    function openSubView(viewId) {
+      goToScreen(viewId);
+      if (viewId === 'view-music' && !isPlaying) {
+        // Automatically start the song when opening the cassette player!
+        toggleAudioPlayback();
+      }
+    }
+
+    function enterBirthdayHero() {
+      goToScreen('screen-hero');
+      launchConfetti(45);
+    }
+
+    function triggerVirtualHug() {
+      goToScreen('screen-hug');
+      const bar = document.getElementById('hug-progress-bar');
+      const title = document.getElementById('hug-status-title');
+      const sub = document.getElementById('hug-subtext');
+
+      bar.style.width = '0%';
+      title.textContent = 'Virtual hug loading...';
+      sub.textContent = 'Sending 10000% love & birthday warmth...';
+
+      setTimeout(() => { bar.style.width = '45%'; }, 150);
+      setTimeout(() => { bar.style.width = '80%'; }, 650);
+      setTimeout(() => {
+        bar.style.width = '100%';
+        title.textContent = 'Virtual Hug Delivered! 🤍🎉';
+        sub.textContent = `Happy Birthday ${appState.recipient}! You are so loved!`;
+        launchConfetti(85);
+      }, 1250);
+    }
+
+    function replayFromStart() {
+      enteredPasscode = '';
+      updatePasscodeDots();
+      document.getElementById('passcode-feedback').textContent = 'Hint: Enter 2011 💕';
+      goToScreen('screen-lock');
+    }
+
+    /* =====================================================================
+       RENDER UI FROM STATE
+       ===================================================================== */
+    function renderAllContent() {
+      // Recipient & Hero
+      document.getElementById('hero-recipient-badge').textContent = appState.recipient || 'Bestie';
+      document.getElementById('hero-photo-img').src = appState.heroPhoto;
+
+      // Letter
+      document.getElementById('letter-heading').textContent = `Happy Birthday, ${appState.recipient || 'Bestie'}! 🌷`;
+      document.getElementById('letter-body-text').textContent = appState.letterText;
+
+      // Music Player
+      document.getElementById('player-song-title').textContent = appState.songTitle;
+      document.getElementById('player-song-artist').textContent = appState.songArtist;
+      document.getElementById('global-music-label').textContent = appState.songTitle;
+
+      const lyrics = appState.songLyrics && appState.songLyrics.length
+        ? appState.songLyrics
+        : DEFAULT_STATE.songLyrics;
+      document.getElementById('active-lyric-line').textContent = lyrics[0];
+      document.getElementById('next-lyric-line').textContent = lyrics[1] || lyrics[0];
+
+      // Audio Source Setup
+      const audioEl = document.getElementById('custom-audio-el');
+      const sourceBadge = document.getElementById('audio-source-badge');
+      if (appState.customAudioDataUrl) {
+        if (audioEl.src !== appState.customAudioDataUrl) {
+          audioEl.src = appState.customAudioDataUrl;
+        }
+        sourceBadge.textContent = appState.customAudioName ? `🎵 ${appState.customAudioName.slice(0, 16)}` : 'Custom Audio';
+      } else {
+        sourceBadge.textContent = 'Built-in Melody';
+      }
+
+      // Render Memories Grid
+      renderMemoriesGrid();
+    }
+
+    function renderMemoriesGrid() {
+      const grid = document.getElementById('memories-grid');
+      grid.innerHTML = '';
+
+      appState.memories.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'group relative bg-[#fffdf7] p-2 rounded-2xl border-2 border-[#cbb4f8] shadow-sm hover:shadow-md transition cursor-pointer flex flex-col';
+        card.onclick = () => openLightbox(item.url, item.caption);
+
+        card.innerHTML = `
+          <div class="w-full aspect-square rounded-xl overflow-hidden bg-[#f3e8ff]">
+            <img src="${item.url}"
+                 onerror="this.src='https://placehold.co/400x400/cbb4f8/4a2c7a?text=Memory+${index + 1}'"
+                 alt="${item.caption || 'Memory'}"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="pt-1.5 px-1 flex items-center justify-between">
+            <span class="font-hand text-base text-[#4a2c7a] truncate">${item.caption || `Memory #${index + 1}`}</span>
+            <button type="button" onclick="event.stopPropagation(); removeMemoryPhoto(${index})"
+              title="Remove photo"
+              class="text-xs text-[#d9468f] opacity-70 hover:opacity-100 px-1.5 rounded">
+              ✕
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openLightbox(url, caption) {
+      const lb = document.getElementById('photo-lightbox');
+      document.getElementById('lightbox-img').src = url;
+      document.getElementById('lightbox-caption').textContent = caption || 'Sweet Memory 💖';
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const lb = document.getElementById('photo-lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    }
+
+    /* =====================================================================
+       FILE UPLOADS (IMAGES & AUDIO)
+       ===================================================================== */
+    function readFileAsDataURL(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handleHeroPhotoUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const dataUrl = await readFileAsDataURL(file);
+      appState.heroPhoto = dataUrl;
+      persistState();
+      renderAllContent();
+      showToast('Main birthday photo updated! 📸');
+    }
+
+    async function handleGalleryUpload(event) {
+      const files = Array.from(event.target.files || []);
+      if (!files.length) return;
+
+      for (const file of files) {
+        const dataUrl = await readFileAsDataURL(file);
+        const cleanName = file.name.replace(/\.[^/.]+$/, '').slice(0, 22);
+        appState.memories.unshift({
+          url: dataUrl,
+          caption: cleanName || 'New Memory 💖'
+        });
+      }
+      persistState();
+      renderAllContent();
+      renderModalGalleryThumbs();
+      showToast(`Added ${files.length} photo(s) to Memories! ✨`);
+    }
+
+    function removeMemoryPhoto(index) {
+      appState.memories.splice(index, 1);
+      persistState();
+      renderAllContent();
+      renderModalGalleryThumbs();
+      showToast('Photo removed');
+    }
+
+    async function handleAudioUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      // Stop built-in synth if running
+      stopSynthMelody();
+
+      const dataUrl = await readFileAsDataURL(file);
+      appState.customAudioDataUrl = dataUrl;
+      appState.customAudioName = file.name;
+
+      // Auto-fill title if user hasn't customized it
+      const cleanSongName = file.name.replace(/\.[^/.]+$/, '');
+      appState.songTitle = cleanSongName;
+      const titleInput = document.getElementById('input-song-title');
+      if (titleInput) titleInput.value = cleanSongName;
+
+      const statusEl = document.getElementById('modal-audio-status');
+      if (statusEl) statusEl.textContent = `Loaded: ${file.name} ✅`;
+
+      persistState();
+      renderAllContent();
+
+      const audioEl = document.getElementById('custom-audio-el');
+      audioEl.src = dataUrl;
+      audioEl.play().then(() => {
+        setPlayingUI(true);
+      }).catch(() => {});
+
+      showToast(`Song "${cleanSongName}" loaded! 🎵`);
+    }
+
+    /* =====================================================================
+       CUSTOMIZE MODAL CONTROLS
+       ===================================================================== */
+    function openCustomizeModal() {
+      document.getElementById('input-recipient').value = appState.recipient;
+      document.getElementById('input-letter').value = appState.letterText;
+      document.getElementById('input-song-title').value = appState.songTitle;
+      document.getElementById('input-song-artist').value = appState.songArtist;
+      document.getElementById('input-song-lyrics').value = (appState.songLyrics || []).join('\n');
+
+      const statusEl = document.getElementById('modal-audio-status');
+      statusEl.textContent = appState.customAudioName
+        ? `Loaded song: ${appState.customAudioName} ✅`
+        : 'Currently using built-in chill birthday melody (or upload your own song!)';
+
+      renderModalGalleryThumbs();
+      const modal = document.getElementById('customize-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeCustomizeModal() {
+      const modal = document.getElementById('customize-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function renderModalGalleryThumbs() {
+      const container = document.getElementById('modal-gallery-thumbs');
+      if (!container) return;
+      container.innerHTML = '';
+      appState.memories.forEach((m, idx) => {
+        const div = document.createElement('div');
+        div.className = 'relative w-14 h-14 rounded-xl overflow-hidden border-2 border-[#cbb4f8]';
+        div.innerHTML = `
+          <img src="${m.url}" class="w-full h-full object-cover" />
+          <button type="button" onclick="removeMemoryPhoto(${idx})"
+            class="absolute top-0 right-0 bg-[#4a2c7a] text-white text-[10px] w-4 h-4 flex items-center justify-center">✕</button>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function saveCustomizations() {
+      appState.recipient = document.getElementById('input-recipient').value.trim() || 'Bestie';
+      appState.letterText = document.getElementById('input-letter').value.trim() || DEFAULT_STATE.letterText;
+      appState.songTitle = document.getElementById('input-song-title').value.trim() || DEFAULT_STATE.songTitle;
+      appState.songArtist = document.getElementById('input-song-artist').value.trim() || DEFAULT_STATE.songArtist;
+
+      const rawLyrics = document.getElementById('input-song-lyrics').value
+        .split('\n')
+        .map((l) => l.trim())
+        .filter(Boolean);
+      appState.songLyrics = rawLyrics.length ? rawLyrics : DEFAULT_STATE.songLyrics;
+
+      persistState();
+      renderAllContent();
+      closeCustomizeModal();
+      showToast('All customizations saved! 💖');
+    }
+
+    function resetToDefaults() {
+      stopAudioPlayback();
+      appState = JSON.parse(JSON.stringify(DEFAULT_STATE));
+      localStorage.removeItem(STORAGE_KEY);
+      renderAllContent();
+      openCustomizeModal();
+      showToast('Reset to default demo ✨');
+    }
+
+    /* =====================================================================
+       AUDIO ENGINE: CUSTOM MP3 PLAYER + BUILT-IN WEB AUDIO LOFI MELODY
+       ===================================================================== */
+    let isPlaying = false;
+    let audioCtx = null;
+    let synthInterval = null;
+    let synthStep = 0;
+    let lyricInterval = null;
+    let lyricIndex = 0;
+
+    const audioEl = document.getElementById('custom-audio-el');
+
+    function ensureAudioContext() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContextClass();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function playClickTone() {
+      try {
+        ensureAudioContext();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(620, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.06);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.07);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.07);
+      } catch (e) {}
+    }
+
+    function playSuccessChime() {
+      try {
+        ensureAudioContext();
+        const notes = [523.25, 659.25, 783.99, 1046.5];
+        notes.forEach((freq, i) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          const start = audioCtx.currentTime + i * 0.08;
+          osc.frequency.setValueAtTime(freq, start);
+          gain.gain.setValueAtTime(0.12, start);
+          gain.gain.exponentialRampToValueAtTime(0.001, start + 0.35);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(start);
+          osc.stop(start + 0.35);
+        });
+      } catch (e) {}
+    }
+
+    // Sweet Lo-Fi Music Box Happy Birthday Melody Fallback
+    const BIRTHDAY_MELODY = [
+      { f: 392.00, d: 0.35 }, { f: 392.00, d: 0.35 }, { f: 440.00, d: 0.7 }, { f: 392.00, d: 0.7 }, { f: 523.25, d: 0.7 }, { f: 493.88, d: 1.2 },
+      { f: 392.00, d: 0.35 }, { f: 392.00, d: 0.35 }, { f: 440.00, d: 0.7 }, { f: 392.00, d: 0.7 }, { f: 587.33, d: 0.7 }, { f: 523.25, d: 1.2 },
+      { f: 392.00, d: 0.35 }, { f: 392.00, d: 0.35 }, { f: 783.99, d: 0.7 }, { f: 659.25, d: 0.7 }, { f: 523.25, d: 0.7 }, { f: 493.88, d: 0.7 }, { f: 440.00, d: 1.1 },
+      { f: 698.46, d: 0.35 }, { f: 698.46, d: 0.35 }, { f: 659.25, d: 0.7 }, { f: 523.25, d: 0.7 }, { f: 587.33, d: 0.7 }, { f: 523.25, d: 1.3 }
+    ];
+
+    function startSynthMelody() {
+      stopSynthMelody();
+      ensureAudioContext();
+      const vol = parseFloat(document.getElementById('audio-volume').value || '0.85');
+
+      const playStep = () => {
+        if (!isPlaying) return;
+        const note = BIRTHDAY_MELODY[synthStep % BIRTHDAY_MELODY.length];
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(note.f, audioCtx.currentTime);
+
+        gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.14 * vol, audioCtx.currentTime + 0.04);
+        gain.gain.exponentialRampToValueAtTime(0.0008, audioCtx.currentTime + note.d + 0.25);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + note.d + 0.28);
+
+        // Update mock scrubber for synth mode
+        const pct = ((synthStep % BIRTHDAY_MELODY.length) / BIRTHDAY_MELODY.length) * 100;
+        document.getElementById('audio-scrubber').value = pct;
+        const sec = Math.floor((synthStep % BIRTHDAY_MELODY.length) * 0.6);
+        document.getElementById('audio-current-time').textContent = `0:${sec < 10 ? '0' + sec : sec}`;
+        document.getElementById('audio-duration').textContent = '0:15';
+
+        synthStep++;
+        synthInterval = setTimeout(playStep, note.d * 650);
+      };
+
+      playStep();
+    }
+
+    function stopSynthMelody() {
+      if (synthInterval) {
+        clearTimeout(synthInterval);
+        synthInterval = null;
+      }
+    }
+
+    function startLyricCycle() {
+      stopLyricCycle();
+      lyricInterval = setInterval(() => {
+        const lyrics = appState.songLyrics && appState.songLyrics.length
+          ? appState.songLyrics
+          : DEFAULT_STATE.songLyrics;
+        lyricIndex = (lyricIndex + 1) % lyrics.length;
+        const nextIdx = (lyricIndex + 1) % lyrics.length;
+        document.getElementById('active-lyric-line').textContent = lyrics[lyricIndex];
+        document.getElementById('next-lyric-line').textContent = lyrics[nextIdx];
+      }, 3200);
+    }
+
+    function stopLyricCycle() {
+      if (lyricInterval) {
+        clearInterval(lyricInterval);
+        lyricInterval = null;
+      }
+    }
+
+    function setPlayingUI(playing) {
+      isPlaying = playing;
+      const btn = document.getElementById('main-play-btn');
+      const disc = document.getElementById('vinyl-disc');
+      const globalPill = document.getElementById('global-music-pill');
+      const globalIcon = document.getElementById('global-music-icon');
+
+      if (playing) {
+        btn.textContent = '⏸️';
+        disc.classList.add('animate-spin');
+        globalPill.classList.remove('hidden');
+        globalPill.classList.add('inline-flex');
+        globalIcon.textContent = '🎶';
+        startLyricCycle();
+      } else {
+        btn.textContent = '▶️';
+        disc.classList.remove('animate-spin');
+        globalIcon.textContent = '⏸️';
+        stopLyricCycle();
+      }
+    }
+
+    function toggleAudioPlayback() {
+      if (isPlaying) {
+        stopAudioPlayback();
+      } else {
+        if (appState.customAudioDataUrl) {
+          audioEl.play().then(() => setPlayingUI(true)).catch(() => {
+            startSynthMelody();
+            setPlayingUI(true);
+          });
+        } else {
+          startSynthMelody();
+          setPlayingUI(true);
+        }
+      }
+    }
+
+    function stopAudioPlayback() {
+      audioEl.pause();
+      stopSynthMelody();
+      setPlayingUI(false);
+    }
+
+    function restartAudio() {
+      if (appState.customAudioDataUrl) {
+        audioEl.currentTime = 0;
+        audioEl.play();
+      } else {
+        synthStep = 0;
+        if (isPlaying) startSynthMelody();
+      }
+    }
+
+    function seekAudio(val) {
+      if (appState.customAudioDataUrl && audioEl.duration) {
+        audioEl.currentTime = (val / 100) * audioEl.duration;
+      } else {
+        synthStep = Math.floor((val / 100) * BIRTHDAY_MELODY.length);
+      }
+    }
+
+    function setAudioVolume(val) {
+      audioEl.volume = parseFloat(val);
+    }
+
+    audioEl.addEventListener('timeupdate', () => {
+      if (!audioEl.duration) return;
+      const pct = (audioEl.currentTime / audioEl.duration) * 100;
+      document.getElementById('audio-scrubber').value = pct;
+      document.getElementById('audio-current-time').textContent = formatTime(audioEl.currentTime);
+      document.getElementById('audio-duration').textContent = formatTime(audioEl.duration);
+    });
+
+    audioEl.addEventListener('ended', () => {
+      setPlayingUI(false);
+    });
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return `${m}:${s < 10 ? '0' + s : s}`;
+    }
+
+    /* =====================================================================
+       TOAST & CONFETTI CELEBRATION
+       ===================================================================== */
+    function showToast(msg) {
+      const toast = document.getElementById('toast-msg');
+      toast.textContent = msg;
+      toast.classList.remove('hidden');
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 2600);
+    }
+
+    function launchConfetti(count = 50) {
+      const canvas = document.getElementById('confetti-canvas');
+      const frame = document.getElementById('app-frame');
+      canvas.width = frame.clientWidth;
+      canvas.height = frame.clientHeight;
+      const ctx = canvas.getContext('2d');
+
+      const colors = ['#cbb4f8', '#ff9ec2', '#ffe98a', '#8ce99a', '#74c0fc'];
+      const pieces = Array.from({ length: count }, () => ({
+        x: Math.random() * canvas.width,
+        y: -20 - Math.random() * 140,
+        r: 5 + Math.random() * 6,
+        c: colors[Math.floor(Math.random() * colors.length)],
+        vx: -2 + Math.random() * 4,
+        vy: 2.5 + Math.random() * 4,
+        rot: Math.random() * 360
+      }));
+
+      let frames = 0;
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pieces.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rot += 5;
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rot * Math.PI) / 180);
+          ctx.fillStyle = p.c;
+          ctx.fillRect(-p.r / 2, -p.r / 2, p.r, p.r * 0.65);
+          ctx.restore();
+        });
+        frames++;
+        if (frames < 130) {
+          requestAnimationFrame(draw);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      draw();
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderAllContent();
+    });
+  </script>
+</body>
+</html>
